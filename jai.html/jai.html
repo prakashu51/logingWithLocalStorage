@@ -15,10 +15,10 @@
         <h1> SignUp </h1>
 
         <form id="form">
-            <input type="text" placeholder="First Name" minlength="3" required><br><br>
-            <input type="text" placeholder="Last Name" minlength="3" required>
+            <input type="text" id="fname" placeholder="First Name" minlength="3" required><br><br>
+            <input type="text" id="lname" placeholder="Last Name" minlength="3" required>
             <br> <br>
-            <label for="gender" required>Gender</label>
+            <label for="gender" id="gender" required>Gender</label>
             <input type="radio" id="male" name="gender" value="male" required>
             <label for="male">Male</label>
             <input type="radio" id="female" name="gender" value="female">
@@ -27,12 +27,12 @@
             <label for="other">Other</label> <br><br>
 
             <label for="Age">Age:</label>
-            <input type="date" placeholder="Age" max="2003-12-31" required><br><br>
-            <input type="tel" placeholder="Mobile Number" pattern="[789][0-9]{9}" required><br><br>
-            <input type="text" placeholder="Father's Name" minlength="3" required><br> <br>
-            <input type="text" placeholder="Mother's Name"><br><br>
-            <input type="text" placeholder="Qualification" minlength="3" required> <br> <br>
-            <input type="text" placeholder="Address" minlength="8" required><br><br>
+            <input type="date" id="age" placeholder="Age" max="2003-12-31" required><br><br>
+            <input type="tel" id="mNumber" placeholder="Mobile Number" pattern="[789][0-9]{9}" required><br><br>
+            <input type="text" id="fatherName" placeholder="Father's Name" minlength="3" required><br> <br>
+            <input type="text" id="motherName" placeholder="Mother's Name"><br><br>
+            <input type="text" id="quali" placeholder="Qualification" minlength="3" required> <br> <br>
+            <input type="text" id="address" placeholder="Address" minlength="8" required><br><br>
 
             <label for="state" required>State:</label>
             <select id="state" name="state">
@@ -42,11 +42,11 @@
             </select>
             <br> <br>
             <label for="languages" required> <strong>Languages Known</strong> </label> <br>
-            <input type="checkbox" id="language" name="language1" value="Hindi">
+            <input type="checkbox" id="language" name="language" value="Hindi">
             <label for="language1"> I know hindi</label><br>
-            <input type="checkbox" id="language2" name="language2" value="English" checked>
+            <input type="checkbox" id="language2" name="language" value="English" checked>
             <label for="language2"> I know English</label><br>
-            <input type="checkbox" id="language3" name="language3" value="Spanish">
+            <input type="checkbox" id="language3" name="language" value="Spanish">
             <label for="language3"> I know Spanish</label> <br> <br>
             <button id=""> submit</button>
 
